@@ -1,1 +1,11 @@
-{"Version":1,"Hash":"n5cSJ1hJBLBiti1U1INKmXrDAk50gTXkCvEAd8JUlSc=","Source":"FilmesApi","BasePath":"/","Mode":"Root","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[],"Assets":[],"Endpoints":[]}
+{
+  "Version": 1,
+  "Hash": "fPBSU3WQUdHCE+U5UFGXi1meA0D1rbudDrvLHjeKe/s=",
+  "Source": "FilmesApi",
+  "BasePath": "_content/FilmesApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
