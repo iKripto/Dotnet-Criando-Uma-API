@@ -22,12 +22,14 @@ namespace FilmesApi.Controllers
             Console.WriteLine(filme.Id);
         }
         [HttpGet]
-        public IEnumerable<Filme> RecuperarFilmes([FromBody] Filme filme)
+        public IEnumerable<Filme> RecuperarFilmes([FromQuery]int skip = 0, [FromQuery]int take = 50) // Exemplo: Para 10 de skip e 10 de take usamos : filme?skip=10&take=10 no postman
         {
-            return filmes;
+            return filmes.Skip(skip).Take(take);
+            // Skip(10) = Vai retornar os filmes depois do décimo.
+            // Take (10) = Vai retornar apenas 10 filmes.
         }
-        [HttpGet("{Id}")]
-        public Filme? RecuperaFilmePorId(int id)
+        [HttpGet("{id}")]
+        public Filme? RecuperaFilmePorId([FromRoute] int id)
         {
             return filmes.FirstOrDefault(filme => filme.Id == id);
         }
